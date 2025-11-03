@@ -21,21 +21,21 @@ export default function Terminal() {
 
   return (
     <div
-      className="h-full max-h-[85vh] w-full max-w-7xl text-sm flex flex-col rounded-lg border border-blue-500/20 shadow-2xl shadow-blue-900/30 overflow-hidden backdrop-blur-xl bg-slate-900/80 animate-fade-in font-fira-code"
+      className="h-full max-h-[85vh] w-full max-w-7xl text-xs sm:text-sm flex flex-col rounded-lg border border-blue-500/20 shadow-2xl shadow-blue-900/30 overflow-hidden backdrop-blur-xl bg-slate-900/80 animate-fade-in font-fira-code"
       onClick={() => inputRef.current?.focus()}
     >
       {/* Glass effect overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-slate-500/5 pointer-events-none"></div>
 
       {/* Fixed banner at top */}
-      <div className="relative p-6 pb-4 border-b border-slate-700/50">
+      <div className="relative p-3 sm:p-6 pb-2 sm:pb-4 border-b border-slate-700/50">
         <WelcomeBanner />
       </div>
 
       {/* Scrollable command history and input */}
       <div
         ref={scrollRef}
-        className="relative flex-1 overflow-y-auto px-6 pb-6 pt-4"
+        className="relative flex-1 overflow-y-auto px-3 sm:px-6 pb-4 sm:pb-6 pt-3 sm:pt-4"
       >
         <TerminalOutput commands={prevCommands} />
         <TerminalInput

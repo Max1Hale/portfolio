@@ -7,6 +7,7 @@ export default function WelcomeBanner() {
           fontFamily: "inherit",
           letterSpacing: "0",
           lineHeight: "1.2",
+          fontSize: "clamp(6px, 1.5vw, 14px)",
         }}
       >{`███╗   ███╗ █████╗ ██╗  ██╗    ██╗  ██╗ █████╗ ██╗     ███████╗
 ████╗ ████║██╔══██╗╚██╗██╔╝    ██║  ██║██╔══██╗██║     ██╔════╝
@@ -21,6 +22,7 @@ export default function WelcomeBanner() {
           fontFamily: "inherit",
           letterSpacing: "0",
           lineHeight: "1.2",
+          fontSize: "clamp(6px, 1.5vw, 14px)",
         }}
       >{`██████╗ ███████╗██╗   ██╗    ██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗
 ██╔══██╗██╔════╝██║   ██║    ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
@@ -29,14 +31,15 @@ export default function WelcomeBanner() {
 ██████╔╝███████╗ ╚████╔╝     ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
 ╚═════╝ ╚══════╝  ╚═══╝      ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝`}</pre>
 
-      <div className="text-gray-300 mb-4 leading-relaxed">
+      <div className="text-gray-300 mb-4 leading-relaxed text-xs sm:text-sm">
         I am an Engineering Co‑Founder and full‑stack developer who loves
         building things that work and solving tough problems through code.
       </div>
 
-      <div className="text-gray-400 text-sm">
-        Type <span className="text-blue-400 font-semibold">'help'</span> for
-        available commands.
+      <div className="text-gray-400 text-xs sm:text-sm">
+        Type{" "}
+        <span className="text-blue-400 font-semibold">&apos;help&apos;</span>{" "}
+        for available commands.
       </div>
     </div>
   );

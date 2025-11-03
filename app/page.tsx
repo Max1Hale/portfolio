@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       {/* Terminal container */}
-      <div className="relative z-10 h-full w-full flex items-center justify-center p-8">
+      <div className="relative z-10 h-full w-full flex items-center justify-center p-2 sm:p-4 md:p-8">
         <Terminal />
       </div>
     </div>

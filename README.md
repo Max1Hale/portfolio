@@ -1,36 +1,185 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terminal Portfolio
+
+A modern, interactive terminal-style portfolio website built with Next.js. Features a fully functional Linux-like terminal interface with file system navigation, custom commands, and a sleek glassmorphism design.
+
+![Terminal Portfolio Preview](public/pcb.jpg)
+
+## Features
+
+- **Interactive Terminal Interface** - Fully functional command-line interface
+- **File System Navigation** - Navigate through directories with `cd`, `ls`, and `cat` commands
+- **Modern Design** - Glassmorphism effects with blurred PCB background
+- **Fira Code Font** - Professional monospace font from Google Fonts
+- **Responsive** - Works on all screen sizes
+- **Fast** - Built with Next.js 16 and React
+- **Type-Safe** - Written in TypeScript
+- **Smooth Animations** - Fade-in and slide-up animations for commands
+
+## Available Commands
+
+- `ls` - List directory contents
+- `cd <directory>` - Change directory (supports `..`, `~`, and nested paths)
+- `cat <file>` - Display file contents
+- `pwd` - Print working directory
+- `clear` - Clear terminal screen
+- `linkedin` - Open LinkedIn profile in new tab
+- `help` - Show all available commands
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (with Turbopack)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Font**: Fira Code (Google Fonts)
+- **Deployment**: Vercel-ready
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/terminal-portfolio.git
+cd terminal-portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Update Your Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `/components/terminal/FileSystem.ts` to customize:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **About Section** (`about.txt`):
+   - Update with your bio and background
 
-## Deploy on Vercel
+2. **Experience** (`experience.txt`):
+   - Add your work experience
+   - Include job titles, companies, dates, and descriptions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Education** (`education.txt`):
+   - List your degrees and institutions
+   - Include relevant coursework and achievements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Projects** (`projects/` directory):
+   - Add your projects as `.txt` files
+   - Include descriptions, tech stacks, and links
+
+### Change LinkedIn URL
+
+Update `/components/terminal/useCommandHandler.ts`:
+```typescript
+case "linkedin": {
+  window.open("https://www.linkedin.com/in/your-profile/", "_blank");
+  // ...
+}
+```
+
+### Customize Colors
+
+The design uses a neutral blue color scheme. To change colors, update:
+- `/app/globals.css` - Scrollbar colors
+- `/components/terminal/Terminal.tsx` - Border and shadow colors
+- `/components/terminal/WelcomeBanner.tsx` - Banner text colors
+- `/components/terminal/useCommandHandler.ts` - Command output colors
+
+### Replace Background Image
+
+Replace `/public/pcb.jpg` with your own background image. Update the reference in `/app/page.tsx` if you change the filename.
+
+### Modify Banner
+
+Update the ASCII art in `/components/terminal/WelcomeBanner.tsx`. You can generate ASCII art at:
+- [patorjk.com/software/taag](https://patorjk.com/software/taag/)
+- Choose a font style and paste your text
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `.next` directory.
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com)
+3. Vercel will automatically detect Next.js and deploy
+
+### Deploy to Other Platforms
+
+The app can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── globals.css          # Global styles and animations
+│   ├── layout.tsx            # Root layout with fonts
+│   ├── page.tsx              # Home page with background
+│   └── terminal.tsx          # Terminal export
+├── components/
+│   └── terminal/
+│       ├── FileSystem.ts     # File system data structure
+│       ├── Terminal.tsx      # Main terminal component
+│       ├── TerminalInput.tsx # Command input component
+│       ├── TerminalOutput.tsx# Command output component
+│       ├── WelcomeBanner.tsx # ASCII art banner
+│       ├── useCommandHandler.ts  # Command logic
+│       └── useFileSystem.ts  # File navigation logic
+├── public/
+│   └── pcb.jpg              # Background image
+└── package.json             # Dependencies
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Inspired by Hyprland and LazyVim aesthetics
+- Built as a unique way to showcase developer portfolios
+- Created by [Max Hale](https://www.linkedin.com/in/max-hale/)
+
+## Support
+
+If you found this helpful, consider:
+- Starring the repository
+- Reporting bugs
+- Suggesting improvements
+
+---
+
+**Made with Next.js and TypeScript**

@@ -23,15 +23,14 @@ export default function TerminalInput({
       className="mt-4"
     >
       <div className="flex items-center">
-        <span className="text-blue-400 font-semibold">
-          {prompt}
-        </span>
+        <span className="text-blue-400 font-semibold">{prompt}</span>
         <input
           ref={inputRef}
           name="terminal-input"
           type="text"
           className="flex-1 ml-2 bg-transparent outline-none text-white caret-blue-400 placeholder:text-gray-600"
           autoComplete="off"
+          autoCapitalize="off"
           spellCheck="false"
           placeholder="Enter a command..."
         />

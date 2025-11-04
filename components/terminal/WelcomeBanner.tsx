@@ -32,8 +32,10 @@ export default function WelcomeBanner() {
 ╚═════╝ ╚══════╝  ╚═══╝      ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝`}</pre>
 
       <div className="text-gray-300 mb-4 leading-relaxed text-xs sm:text-sm">
-        I am an Engineering Co‑Founder and full‑stack developer who loves
-        building things that work and solving tough problems through code.
+        Software engineer who approaches system design with the precision of a
+        physicist and the creativity of a builder. Experienced across the full
+        stack, I focus on reliability, scalability, and crafting solutions that
+        bridge technology and real‑world outcomes.
       </div>
 
       <div className="text-gray-400 text-xs sm:text-sm">

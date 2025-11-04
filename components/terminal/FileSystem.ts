@@ -16,9 +16,9 @@ export const fileSystem: FileSystem = {
 
 I hold a master's degree in Physics, where I developed simulations and remote-controlled laser experiments to automate data collection and validate experimental results. Working with Monte Carlo simulations for nuclear decay taught me how to design systems that connect theory with real-world performance. That same curiosity and pragmatism now drives the way I build products and teams.
 
-As Engineering Co-Founder of Meritt, I lead all engineering and product development. I built the entire platform from scratch, evolving it from Angular and Spring Boot into a modern Next.js and React stack on Vercel and AWS. I designed an AI-powered vector search using pgVector and LLM explanations, implemented end-to-end monitoring, and built a testing framework to keep everything reliable at scale.
+As Engineering Co-Founder of Meritt, I lead all engineering and product development. I built the entire SaaS platform from scratch, evolving it from Angular and Spring Boot into a modern Next.js and React stack on Vercel and AWS. I designed an AI-powered vector search using pgVector and LLM explanations, implemented end-to-end monitoring, and built a testing framework to keep everything reliable at scale.
 
-Before Meritt, I joined Cirqul as a Senior Software Engineer, where I built a creative collaboration platform for digital creators and a large-file transfer product called Sendit. I architected the stack with Next.js, PostgreSQL, and FFmpeg and built a media pipeline capable of handling 100 GB, 8K uploads.
+Before Meritt, I joined Cirqul as a Senior Software Engineer, where I built a creative collaboration platform for digital creators and a large-file transfer product called Sendit. I architected the stack with Next.js, PostgreSQL, and FFmpeg and built a media pipeline capable of handling 100 GB uploads.
 
 Earlier, I tutored Mathematics and Physics through MyTutor, delivering over 600 hours of one-on-one lessons. All of my A-Level students achieved at least an A grade, and many went on to study STEM at top universities.
 
@@ -34,44 +34,44 @@ At the end of the day, I just love coding, learning, and building awesome produc
 meritt - Engineering Co-Founder
 Nov 2024 - Present | United Kingdom (Remote) | Full-time
 
-Built Meritt from concept to live platform, a modern sales recruiting product connecting companies with top sales talent through intelligent search and seamless collaboration tools. Owned the entire technical stack and drove product direction from the earliest prototype through production.
+Built Meritt from concept to production, a modern recruiting SaaS platform connecting companies with top sales talent through intelligent AI‑powered search and collaboration. Defined and executed the entire technical strategy, architecture, and delivery lifecycle.
 
-• Scaled the platform from 8,000 to over 20,000 users while maintaining 99.9% uptime as the sole engineer and on-call lead.
+- Owned full‑stack architecture and production reliability, operating as both engineering lead and on‑call engineer responsible for uptime, incident response, and performance monitoring across all environments.
 
-• Re-architected the system from Angular and Spring Boot to a high-performance Next.js and React platform on Vercel and AWS, boosting Lighthouse performance scores from 42 to 90.
+- Scaled the platform from 8,000 to 20,000+ users across 20 recruiting teams while maintaining 99.9% uptime, leading incident‑free releases over consecutive quarters.
 
-• Implemented scalable backend services with PostgreSQL, pgVector, and S3 to power real-time candidate search across more than 1 million LinkedIn profile entries.
+- Designed and implemented a Clean, Hexagonal architecture, enforcing clear boundaries between domain, application, and infrastructure layers to enable rapid iteration and robust testing.
 
-• Built an AI-driven vector search with LLM-based explanations to improve accuracy and transparency for recruiters.
+- Re‑architected the legacy Angular/Spring Boot stack into a Next.js + React system running on Vercel + AWS, improving performance and cutting infra costs by 80%.
 
-• Designed and deployed robust email and SMS pipelines with end-to-end monitoring and alerts to ensure reliability.
+- Delivered an AI‑driven vector search engine using pgVector and LLM‑based ranking, indexing over 1M+ LinkedIn profiles with measurable gains in candidate match accuracy.
 
-• Developed a comprehensive testing framework (unit, integration, and end-to-end) during the migration to Next.js to maintain consistency and stability across the stack.
+- Built secure authentication services supporting password, LinkedIn, and Google OAuth.
 
-• Established a continuous CI/CD pipeline, shipping features weekly for both internal teams and external users.
+- Automated deployment pipelines via CI/CD, reducing release times from 20 min to 5 min and establishing blue‑green deployment strategies with rollback support.
 
-• Worked directly with co-founders to evolve early prototypes into a stable, production-ready platform.
+- Monitored and optimised production systems using Sentry, BetterStack, and PostHog, translating error data into actionable engineering insights during weekly reliability reviews.
 
-Tech: Next.js, React, TypeScript, Node.js, PostgreSQL, pgVector, Neon, AWS (S3, ECS, EC2), Vercel, Jest, Playwright
+- Partnered in investor demos and fundraising pitches to 25+ angels, highlighting quantifiable recruiter time savings of 25 hours per user per month through AI screening automation.
+
+Tech: Next.js, React, TypeScript, Node.js, PostgreSQL, pgVector, Neon, AWS (S3, ECS, EC2, CloudFront), Vercel, Jest, Playwright, Docker, Sentry, BetterStack, PostHog
 
 ---
 
 Cirqul - Senior Software Engineer 
 August 2024 - February 2025 | United Kingdom (Remote) | Full-time
 
-Joined as the sole engineer to lead technical strategy and build Cirqul's first working prototypes, a creative collaboration platform for artists and creators to upload, share, and showcase their projects.
+Joined as the sole engineer to lead technical strategy and build Cirqul’s first working prototypes - a creative collaboration platform for artists and digital creators to share and showcase their work.
 
-• Architected and implemented the full stack using Next.js, PostgreSQL, and FFmpeg, preparing the platform for launch to a waitlist of more than 1,000 creative professionals.
+- Delivered production‑ready prototypes that powered fundraising and validated the product vision.
 
-• Built a scalable video encoding and compression pipeline capable of processing 100 GB, 8K media uploads.
+- Architected the tech stack and built a distributed video encoding and compression pipeline capable of processing up to 100 GB uploads.
 
-• Developed Sendit, a secure large-file transfer platform with a fast, intuitive user experience.
+- Developed Sendit by Cirqul, a secure high‑speed file transfer platform built using Next.js, Kafka, FastAPI, and S3 (Backblaze).
 
-• Owned end-to-end engineering including product design, system architecture, deployment, and iteration.
+- Utilised Clean Architecture patterns to enforce separation between business logic and services, reducing coupling and improving maintainability as the system evolved.
 
-• Delivered production-ready prototypes that validated the product vision and supported investor discussions.
-
-Tech: Next.js, PostgreSQL, FFmpeg, TypeScript
+Tech: Next.js, PostgreSQL, FFmpeg, TypeScript, Kafka, FastAPI, S3 (Backblaze)
 
 ---
 
@@ -102,7 +102,7 @@ Sep 2021 - Jun 2025
 
 Completed an integrated master's degree in Physics with a focus on quantum optics, quantum field theory, general relativity, and computational physics. Combined deep theoretical study with hands-on experimentation and software development.
 
-• Master's thesis: "Beam Shaping for Information Transfer" — designed and ran experiments studying vortex and vector laser beams for high-efficiency optical communication.
+• Master's thesis: "Beam Shaping for Information Transfer", I designed and ran experiments studying vortex and vector laser beams for high-efficiency optical communication.
 
 • Built custom simulations in Python to model beam dynamics and compare optical performance across configurations.
 
